@@ -1,6 +1,4 @@
-const prefix = '/nextjs-blog';
-
-import new URL('/css/main.css', prefix)
+import '/nextjs-blog/css/main.css'
 
 export default function App({ Component, pageProps}) {
     return <Component {...pageProps} />
