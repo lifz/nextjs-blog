@@ -9,21 +9,21 @@ export default function Home() {
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		</Head>
-		<body class="is-preload">
+		<body className="is-preload">
 			
 			<div id="wrapper">
 				
 				<div id="main">
-					<div class="inner">
+					<div className="inner">
 						
 						<header id="header">
 							<Link href="/">
-								<a class="logo"><strong>Fengzhan Li</strong></a>
+								<a className="logo"><strong>Fengzhan Li</strong></a>
 							</Link>
 						</header>
 						
 						<section id="banner">
-							<div class="content">
+							<div className="content">
 								<header>
 									<h1>Hi, I'm Fengzhan</h1>
 									<p>Imagine not having a blog in 2021</p>
@@ -32,13 +32,13 @@ export default function Home() {
 						</section>
 						
 						<section>
-							<header class="major">
+							<header className="major">
 								<h2>Here you can find</h2>
 							</header>
-							<div class="features">
+							<div className="features">
 								<article>
-									<span class="icon solid fa-briefcase"></span>
-									<div class="content">
+									<span className="icon solid fa-briefcase"></span>
+									<div className="content">
 										<h3>
 											<Link href="/posts/portfolio">
 												<a>My portfolio</a>
@@ -48,8 +48,8 @@ export default function Home() {
 									</div>
 								</article>
 								<article>
-									<span class="icon solid fa-book"></span>
-									<div class="content">
+									<span className="icon solid fa-book"></span>
+									<div className="content">
 										<h3>
 											<Link href="/posts/reading">
 												<a>Books I read</a>
@@ -59,8 +59,8 @@ export default function Home() {
 									</div>
 								</article>
 								<article>
-									<span class="icon solid fa-feather-alt"></span>
-									<div class="content">
+									<span className="icon solid fa-feather-alt"></span>
+									<div className="content">
 										<h3>
 											<Link href="/posts/learning">
 												<a>My notes</a>
@@ -70,8 +70,8 @@ export default function Home() {
 									</div>
 								</article>
 								<article>
-									<span class="icon solid fa-hand-spock"></span>
-									<div class="content">
+									<span className="icon solid fa-hand-spock"></span>
+									<div className="content">
 										<h3>And more...</h3>
 										<p>I also share some of my favorite songs, movies and TV shows.</p>
 									</div>
@@ -83,15 +83,15 @@ export default function Home() {
 				</div>
 				
 				<div id="sidebar">
-					<div class="inner">
-						<section id="search" class="alt">
+					<div className="inner">
+						<section id="search" className="alt">
 							<form method="post" action="#">
 								<input type="text" name="query" id="query" placeholder="Search" />
 							</form>
 						</section>
 						
 						<nav id="menu">
-							<header class="major">
+							<header className="major">
 								<h2>Menu</h2>
 							</header>
 							<ul>
@@ -134,17 +134,17 @@ export default function Home() {
 						</nav>
 						
 						<section>
-							<header class="major">
+							<header className="major">
 								<h2>Get in touch</h2>
 							</header>
 							<p>What's on your mind?</p>
-							<ul class="contact">
-								<li class="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
+							<ul className="contact">
+								<li className="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
 							</ul>
 						</section>
 						
 						<footer id="footer">
-							<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p className="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</footer>
 					
 					</div>

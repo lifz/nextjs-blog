@@ -9,21 +9,21 @@ export default function Portfolio() {
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		</Head>
-		<body class="is-preload">
+		<body className="is-preload">
 			
 			<div id="wrapper">
 				
 				<div id="main">
-					<div class="inner">
+					<div className="inner">
 						
 						<header id="header">
 							<Link href="/">
-								<a class="logo"><strong>Fengzhan Li</strong></a>
+								<a className="logo"><strong>Fengzhan Li</strong></a>
 							</Link>
 						</header>
 
 						<section id="banner">
-							<div class="content">
+							<div className="content">
 								<header>
 									<h1>Portfolio</h1>
 								</header>
@@ -31,14 +31,14 @@ export default function Portfolio() {
 						</section>
 												
 						<section>
-							<div class="posts">
+							<div className="posts">
 								<article>
 									<h3>How does a bike-share navigate speedy success?</h3>
 									<p>A bike-share company wants to convert more regular riders into annual members. I help the team come up with a solution by identifying key behavioural differences between casuals and members.</p>
-									<ul class="actions">
+									<ul className="actions">
 										<li>
 											<Link href="/posts/portfolio/how-does-a-bike-share-navigate-speedy-success">
-												<a class="button">More</a>
+												<a className="button">More</a>
 											</Link>
 										</li>
 									</ul>
@@ -50,15 +50,15 @@ export default function Portfolio() {
 				</div>
 				
 				<div id="sidebar">
-					<div class="inner">
-						<section id="search" class="alt">
+					<div className="inner">
+						<section id="search" className="alt">
 							<form method="post" action="#">
 								<input type="text" name="query" id="query" placeholder="Search" />
 							</form>
 						</section>
 						
 						<nav id="menu">
-							<header class="major">
+							<header className="major">
 								<h2>Menu</h2>
 							</header>
 							<ul>
@@ -101,17 +101,17 @@ export default function Portfolio() {
 						</nav>
 						
 						<section>
-							<header class="major">
+							<header className="major">
 								<h2>Get in touch</h2>
 							</header>
 							<p>What's on your mind?</p>
-							<ul class="contact">
-								<li class="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
+							<ul className="contact">
+								<li className="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
 							</ul>
 						</section>
 						
 						<footer id="footer">
-							<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p className="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</footer>
 					
 					</div>

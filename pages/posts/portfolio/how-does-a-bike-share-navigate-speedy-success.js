@@ -9,21 +9,21 @@ export default function Portfolio() {
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		</Head>
-		<body class="is-preload">
+		<body className="is-preload">
 			
 			<div id="wrapper">
 				
 				<div id="main">
-					<div class="inner">
+					<div className="inner">
 						
 						<header id="header">
 							<Link href="/">
-								<a class="logo"><strong>Fengzhan Li</strong></a>
+								<a className="logo"><strong>Fengzhan Li</strong></a>
 							</Link>
 						</header>
 
 						<section id="banner">
-							<div class="content">
+							<div className="content">
 								<header>
 									<h1>How does a bike-share navigate speedy success?</h1>
 								</header>
@@ -32,57 +32,49 @@ export default function Portfolio() {
 												
 						<section>
 							<div id="toc_container">
-								<h3 class="toc_title">Contents</h3>
-								<p>
-									<ul class="toc_list">
-										<li><Link href="#introduction"><a>Introduction</a></Link></li>
-										<li><Link href="#ask"><a>I. Ask - Business task</a></Link></li>
-										<li><Link href="#prepare"><a>II. Prepare - Data management</a></Link></li>
-										<li><Link href="#process"><a>III. Process - Data cleaning</a></Link></li>
-										<li><Link href="#analyse"><a>IV. Analyse - Data analysis</a></Link></li>
-										<li><Link href="#share"><a>V. Share - Data visualization</a></Link></li>
-										<li><Link href="#act"><a>VI. Act - Problem solving</a></Link></li>
-									</ul>
-								</p>
+								<h3 className="toc_title">Contents</h3>
+								<ul className="toc_list">
+									<li><Link href="#introduction"><a>Introduction</a></Link></li>
+									<li><Link href="#ask"><a>I. Ask - Business task</a></Link></li>
+									<li><Link href="#prepare"><a>II. Prepare - Data management</a></Link></li>
+									<li><Link href="#process"><a>III. Process - Data cleaning</a></Link></li>
+									<li><Link href="#analyse"><a>IV. Analyse - Data analysis</a></Link></li>
+									<li><Link href="#share"><a>V. Share - Data visualization</a></Link></li>
+									<li><Link href="#act"><a>VI. Act - Problem solving</a></Link></li>
+								</ul>
 							</div>
 						</section>
 
 						<section>
 							
-							<div class="content">
+							<div className="content">
 								
 								<div id="introduction">
 									<h2>Introduction</h2>
 									<p>This case study is meant to be a capstone project for the Google Data Analytics Professional Certificate.</p>
 									<h3>Scenario</h3>
-									<p>
-										<ul>
-											<li>Company: Cyclistic, a bike-share company in Chicago</li>
-											<li>Marketing strategy: maximize the number of annual memberships</li>
-											<li>Task: understand how casual riders and annual members use Cyclistic bikes differently</li>
-											<li>Purpose: convert casual riders into annual members</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Company: Cyclistic, a bike-share company in Chicago</li>
+										<li>Marketing strategy: maximize the number of annual memberships</li>
+										<li>Task: understand how casual riders and annual members use Cyclistic bikes differently</li>
+										<li>Purpose: convert casual riders into annual members</li>
+									</ul>
 									<h3>Background information</h3>
-									<p>
-										<ul>
-											<li>Cyclistic: has more than 5800 bicycles and 600 docking stations, offers reclining bikes, hand tricycles, and cargo bikes, values diversity. 8% of riders use the assistive options. 30% use Cyclistic bikes to commute to work each day.</li>
-											<li>Lily Moreno: the director of marketing and my manager</li>
-											<li>Cyclistic marketing analytics team: the team I'm in, we collect, analyse, and report data that helps guide Cyclistic marketing strategy</li>
-											<li>Cyclistic executive team: they will decide whether to approve the recommended marketing program</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Cyclistic: has more than 5800 bicycles and 600 docking stations, offers reclining bikes, hand tricycles, and cargo bikes, values diversity. 8% of riders use the assistive options. 30% use Cyclistic bikes to commute to work each day.</li>
+										<li>Lily Moreno: the director of marketing and my manager</li>
+										<li>Cyclistic marketing analytics team: the team I'm in, we collect, analyse, and report data that helps guide Cyclistic marketing strategy</li>
+										<li>Cyclistic executive team: they will decide whether to approve the recommended marketing program</li>
+									</ul>
 									<h3>About the company</h3>
-									<p>
-										<ul>
-											<li>Current marketing strategy: build general awareness and appeal to broad consumer segments</li>
-											<li>Flexible pricing plans: single-ride (casual rider), full-day (casual rider) and annual memberships (Cyclistic member)</li>
-											<li>Due to the fact that annual members are much more profitable than casual riders, Moreno believes that the company's marketing strategy should shift from attracting all-new customers to converting casual riders into Cyclistic members.</li>
-											<li>Casual riders are already familiar with their product, and have shown confidence in it.</li>
-											<li>Goal: understand how casual riders and annual members differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics</li>
-											<li>Approach: analyse the Cyclistic historical bike trip data to identify trends</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Current marketing strategy: build general awareness and appeal to broad consumer segments</li>
+										<li>Flexible pricing plans: single-ride (casual rider), full-day (casual rider) and annual memberships (Cyclistic member)</li>
+										<li>Due to the fact that annual members are much more profitable than casual riders, Moreno believes that the company's marketing strategy should shift from attracting all-new customers to converting casual riders into Cyclistic members.</li>
+										<li>Casual riders are already familiar with their product, and have shown confidence in it.</li>
+										<li>Goal: understand how casual riders and annual members differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics</li>
+										<li>Approach: analyse the Cyclistic historical bike trip data to identify trends</li>
+									</ul>
 								</div>
 
 								<div id="ask">
@@ -156,16 +148,14 @@ export default function Portfolio() {
 									<h3>2. Have you ensured your data's integrity?</h3>
 									<p>See <Link href="#subsection5"><a>II. 5</a></Link>.</p>
 									<h3>3. What steps have you taken to ensure that your data is clean?</h3>
-									<p>
-										<ul>
-											<li>Delete all geolocation data as there are too many blanks across several months and it is impossible to fill them without further information as to why they were there in the first place.</li>
-											<li>Create a column called “ride_length”. Calculate the length of each ride by subtracting the column “started_at” from the column “ended_at” (for example, =D2-C2) and format as [h]:mm:ss.</li>
-											<li>Filter out the "########"s.</li>
-											<li>Create a column called “day_of_week”, and calculate the day of the week that each ride started using the “WEEKDAY” command (for example, =WEEKDAY(C2,1)) in each file. Format as General or as a number with no decimals, noting that 1 = Sunday and 7 = Saturday.</li>
-											<li>Verify the filter of "day_of_week" column and make sure there are only numbers from 1 to 7.</li>
-											<li>Repeat the above steps for every month.</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Delete all geolocation data as there are too many blanks across several months and it is impossible to fill them without further information as to why they were there in the first place.</li>
+										<li>Create a column called “ride_length”. Calculate the length of each ride by subtracting the column “started_at” from the column “ended_at” (for example, =D2-C2) and format as [h]:mm:ss.</li>
+										<li>Filter out the "########"s.</li>
+										<li>Create a column called “day_of_week”, and calculate the day of the week that each ride started using the “WEEKDAY” command (for example, =WEEKDAY(C2,1)) in each file. Format as General or as a number with no decimals, noting that 1 = Sunday and 7 = Saturday.</li>
+										<li>Verify the filter of "day_of_week" column and make sure there are only numbers from 1 to 7.</li>
+										<li>Repeat the above steps for every month.</li>
+									</ul>
 									<h3>4. How can you verify that your data is clean and ready to analyse?</h3>
 									<p>
 										Verify each column's filters so that the data is properly formatted.<br />
@@ -178,48 +168,40 @@ export default function Portfolio() {
 								<div id="analyse">
 									<h2>IV. Analyse - Data analysis</h2>
 									<h3>1. General calculations</h3>
-									<p>For each month, calculate:
-										<ul>
-											<li>the mean of ride_length</li>
-											<li>the max of ride_length</li>
-											<li>the mode of day_of_week</li>
-										</ul>
-										Observations:
-										<ul>
-											<li>the mean of ride_length stays around 35 minutes from April to July, it peaks in July at 38 minutes, then it goes down from there until January of the following year, where it reaches its yearly low at 15 minutes, it goes back up in February and March at about 23 minutes.</li>
-											<li>the max of ride_length is ridiculously high (well above 24 hours) for every month.</li>
-											<li>In 9 months out of 12, Saturday had the highest number of rides. In April, it was Sunday (Saturday was the second). In July, it was Friday (Saturday was the second). In December, it was Wednesday (Saturday was the sixth).</li>
-										</ul>
-									</p>
+									<ul>For each month, calculate:
+										<li>the mean of ride_length</li>
+										<li>the max of ride_length</li>
+										<li>the mode of day_of_week</li>
+									</ul>
+									<ul>Observations:
+										<li>the mean of ride_length stays around 35 minutes from April to July, it peaks in July at 38 minutes, then it goes down from there until January of the following year, where it reaches its yearly low at 15 minutes, it goes back up in February and March at about 23 minutes.</li>
+										<li>the max of ride_length is ridiculously high (well above 24 hours) for every month.</li>
+										<li>In 9 months out of 12, Saturday had the highest number of rides. In April, it was Sunday (Saturday was the second). In July, it was Friday (Saturday was the second). In December, it was Wednesday (Saturday was the sixth).</li>
+									</ul>
 									<h3>2. Member vs. casual calculations</h3>
-									<p>For each month, for member/casual, calculate:
-										<ul>
-											<li>the average ride_length</li>
-											<li>the average ride_length by day_of_week</li>
-											<li>the number of rides by day_of_week</li>
-										</ul>
-										Observations:
-										<ul>
-											<li>The average ride_length of casuals was generally 2 or 3 times longer than that of members.</li>
-											<li>Both casuals and members tend to ride longer on weekends.</li>
-											<li>Both casuals and members tend to ride more on weekends in terms of number of rides.</li>
-											<li>In all 12 months, the total number of rides done by members was always higher than that of casuals. However, in the "high" months (when the total number of rides is at or around its yearly peak), the total number of rides completed by casuals came very close to that of members, even surpassed it on weekends in June, July, August and September; whereas in the "low" months, the total number of rides done by casuals is significantly lower than that of members, less than a half or even a third sometimes (less than a forth if we are talking about number of rides during weekdays).</li>
-											<li>Generally speaking, casuals are more prone to seasonal changes, their monthly variation is higher than member's. Also, for members, the difference between the number of weekday and weekend rides is lower than for casual riders, who ride much more on weekends and much less on weekdays.</li>
-										</ul>
-									</p>									
+									<ul>For each month, for member/casual, calculate:
+										<li>the average ride_length</li>
+										<li>the average ride_length by day_of_week</li>
+										<li>the number of rides by day_of_week</li>
+									</ul>
+									<ul>Observations:
+										<li>The average ride_length of casuals was generally 2 or 3 times longer than that of members.</li>
+										<li>Both casuals and members tend to ride longer on weekends.</li>
+										<li>Both casuals and members tend to ride more on weekends in terms of number of rides.</li>
+										<li>In all 12 months, the total number of rides done by members was always higher than that of casuals. However, in the "high" months (when the total number of rides is at or around its yearly peak), the total number of rides completed by casuals came very close to that of members, even surpassed it on weekends in June, July, August and September; whereas in the "low" months, the total number of rides done by casuals is significantly lower than that of members, less than a half or even a third sometimes (less than a forth if we are talking about number of rides during weekdays).</li>
+										<li>Generally speaking, casuals are more prone to seasonal changes, their monthly variation is higher than member's. Also, for members, the difference between the number of weekday and weekend rides is lower than for casual riders, who ride much more on weekends and much less on weekdays.</li>
+									</ul>									
 								</div>
 
 								<div id="share">
 									<h2>V. Share - Data visualization</h2>
 									<h3>1. Preparation</h3>
-									<p>
-										<ul>
-											<li>Average duration of rides by months — trend, small change — line chart</li>
-											<li>Number of rides by months — trend, big change — bar chart</li>
-											<li>Average duration of rides by day of the week — bar chart with month filter</li>
-											<li>Average number of rides by day of the week — bar chart with month filter</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Average duration of rides by months — trend, small change — line chart</li>
+										<li>Number of rides by months — trend, big change — bar chart</li>
+										<li>Average duration of rides by day of the week — bar chart with month filter</li>
+										<li>Average number of rides by day of the week — bar chart with month filter</li>
+									</ul>
 									<h3>2. Visualization</h3>
 									<p>
 										Hosted on Tableau Public:<br />
@@ -238,30 +220,23 @@ export default function Portfolio() {
 								<div id="act">
 									<h2>VI. Act - Problem solving</h2>
 									<h3>1. Conclusion</h3>
-									<p>
-										Casuals and members differ in the following:
-										<ul>
-											<li>Casuals ride less often than members, but each ride lasts longer.</li>
-											<li>Casuals' willingness to ride correlated more with changes in temperature, they rode more when temperatures rose, and less when temperature fell. Members followed the same trend, but there was little variation between months.</li>
-											<li>Casuals prefer to ride on weekends (a tendency that is much stronger when temperatures are high), and members have no preference for weekdays or weekends.</li>
-										</ul>
-									</p>
+									<ul>Casuals and members differ in the following:
+										<li>Casuals ride less often than members, but each ride lasts longer.</li>
+										<li>Casuals' willingness to ride correlated more with changes in temperature, they rode more when temperatures rose, and less when temperature fell. Members followed the same trend, but there was little variation between months.</li>
+										<li>Casuals prefer to ride on weekends (a tendency that is much stronger when temperatures are high), and members have no preference for weekdays or weekends.</li>
+									</ul>
 									<h3>2. Recommendations</h3>
-									<p>
-										<ul>
-											<li>Since casuals use Cyclistic bikes more often in summer and on weekends, they are more likely to consider upgrading to a membership at that time. Therefore, we could offer a small membership discount each weekend and when summer comes, we could offer a larger discount on weekends and a smaller discount on weekdays.</li>
-											<li>We could also improve the membership system and add different tiers, such as weekend-only membership, monthly membership, seasonal membership, and finally annual membership. The price of membership for certain months and seasons should reflect the popularity of Cyclistic at that time.</li>
-											<li>Finally, we could consider adjusting our allocation of advertising resources. We should spend more on advertising in summer and less in winter.</li>
-										</ul>
-									</p>
+									<ul>
+										<li>Since casuals use Cyclistic bikes more often in summer and on weekends, they are more likely to consider upgrading to a membership at that time. Therefore, we could offer a small membership discount each weekend and when summer comes, we could offer a larger discount on weekends and a smaller discount on weekdays.</li>
+										<li>We could also improve the membership system and add different tiers, such as weekend-only membership, monthly membership, seasonal membership, and finally annual membership. The price of membership for certain months and seasons should reflect the popularity of Cyclistic at that time.</li>
+										<li>Finally, we could consider adjusting our allocation of advertising resources. We should spend more on advertising in summer and less in winter.</li>
+									</ul>
 									<h3>3. Limitations</h3>
-									<p>
-										<ul>
-											<li>The Coronavirus outbreak could have an impact on the data.</li>
-											<li>There were some extremely short and extremely long rides that we did not exclude during the cleaning phase.</li>
-											<li>We did not take into account the type of bike. A more detailed analysis is possible.</li>
-										</ul>
-									</p>
+									<ul>
+										<li>The Coronavirus outbreak could have an impact on the data.</li>
+										<li>There were some extremely short and extremely long rides that we did not exclude during the cleaning phase.</li>
+										<li>We did not take into account the type of bike. A more detailed analysis is possible.</li>
+									</ul>
 								</div>
 
 							</div>
@@ -272,15 +247,15 @@ export default function Portfolio() {
 				</div>
 				
 				<div id="sidebar">
-					<div class="inner">
-						<section id="search" class="alt">
+					<div className="inner">
+						<section id="search" className="alt">
 							<form method="post" action="#">
 								<input type="text" name="query" id="query" placeholder="Search" />
 							</form>
 						</section>
 						
 						<nav id="menu">
-							<header class="major">
+							<header className="major">
 								<h2>Menu</h2>
 							</header>
 							<ul>
@@ -323,17 +298,17 @@ export default function Portfolio() {
 						</nav>
 						
 						<section>
-							<header class="major">
+							<header className="major">
 								<h2>Get in touch</h2>
 							</header>
 							<p>What's on your mind?</p>
-							<ul class="contact">
-								<li class="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
+							<ul className="contact">
+								<li className="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
 							</ul>
 						</section>
 						
 						<footer id="footer">
-							<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p className="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</footer>
 					
 					</div>

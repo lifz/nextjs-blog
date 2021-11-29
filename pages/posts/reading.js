@@ -9,21 +9,21 @@ export default function Reading() {
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		</Head>
-		<body class="is-preload">
+		<body className="is-preload">
 			
 			<div id="wrapper">
 				
 				<div id="main">
-					<div class="inner">
+					<div className="inner">
 						
 						<header id="header">
 							<Link href="/">
-								<a class="logo"><strong>Fengzhan Li</strong></a>
+								<a className="logo"><strong>Fengzhan Li</strong></a>
 							</Link>
 						</header>
 
 						<section id="banner">
-							<div class="content">
+							<div className="content">
 								<header>
 									<h1>Reading</h1>
 								</header>
@@ -31,7 +31,7 @@ export default function Reading() {
 						</section>
 												
 						<section>
-							<div class="content">
+							<div className="content">
                                 <article>
                                     <h3>
 										<Link href="/posts/reading/li-zhi-yu-qing-gan">
@@ -66,15 +66,15 @@ export default function Reading() {
 				</div>
 				
 				<div id="sidebar">
-					<div class="inner">
-						<section id="search" class="alt">
+					<div className="inner">
+						<section id="search" className="alt">
 							<form method="post" action="#">
 								<input type="text" name="query" id="query" placeholder="Search" />
 							</form>
 						</section>
 						
 						<nav id="menu">
-							<header class="major">
+							<header className="major">
 								<h2>Menu</h2>
 							</header>
 							<ul>
@@ -117,17 +117,17 @@ export default function Reading() {
 						</nav>
 						
 						<section>
-							<header class="major">
+							<header className="major">
 								<h2>Get in touch</h2>
 							</header>
 							<p>What's on your mind?</p>
-							<ul class="contact">
-								<li class="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
+							<ul className="contact">
+								<li className="icon solid fa-envelope"><a href="mailto:lifengzhan@hotmail.com">lifengzhan@hotmail.com</a></li>
 							</ul>
 						</section>
 						
 						<footer id="footer">
-							<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p className="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</footer>
 					
 					</div>
