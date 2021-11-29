@@ -1,4 +1,6 @@
+const basePath = process.env.NODE_ENV === 'production' ? '/nextjs-blog' : '';
+
 module.exports = {
-    basePath: '/nextjs-blog',
-    assetPrefix: '/nextjs-blog/'
-}
+  basePath,
+  assetPrefix: `${basePath}/`
+};
