@@ -1,4 +1,4 @@
 module.exports = {
-    basePath: '/nextjs-blog/',
+    basePath: '/nextjs-blog',
     assetPrefix: '/nextjs-blog/'
 }
