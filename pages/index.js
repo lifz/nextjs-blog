@@ -39,21 +39,33 @@ export default function Home() {
 								<article>
 									<span class="icon solid fa-briefcase"></span>
 									<div class="content">
-										<h3>My portfolio</h3>
+										<h3>
+											<Link href="/posts/portfolio">
+												<a>My portfolio</a>
+											</Link>
+										</h3>
 										<p>Case studies I have done using public datasets.</p>
 									</div>
 								</article>
 								<article>
 									<span class="icon solid fa-book"></span>
 									<div class="content">
-										<h3>Books I read</h3>
+										<h3>
+											<Link href="/posts/reading">
+												<a>Books I read</a>
+											</Link>
+										</h3>
 										<p>I summarize the books I found useful or interesting.</p>
 									</div>
 								</article>
 								<article>
 									<span class="icon solid fa-feather-alt"></span>
 									<div class="content">
-										<h3>My notes</h3>
+										<h3>
+											<Link href="/posts/learning">
+												<a>My notes</a>
+											</Link>
+										</h3>
 										<p>I take notes on whatever I'm learning, be it online courses or self-study projects.</p>
 									</div>
 								</article>
