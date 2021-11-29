@@ -133,7 +133,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
-  font-family: "Roboto Slab", serif, "Microsoft YaHei", "微软雅黑";
+  font-family: "Roboto Slab", "Microsoft YaHei", "微软雅黑";
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0; }
